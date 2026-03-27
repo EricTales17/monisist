@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian EDU - Sistema Escolar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="login-screen">
+        <h1>Guardian EDU</h1>
+        <p>Acesso ao Sistema</p>
+        <input type="text" id="username" placeholder="Usuário (ex: professor)">
+        <input type="password" id="password" placeholder="Senha (ex: 123)">
+        <button onclick="fazerLogin()">Entrar</button>
+    </div>
+
+    <div id="tela-professor" class="dashboard hidden">
+        <div class="header">
+            <h2>Painel da Turma - 2º Ano A</h2>
+            <button class="logout-btn" onclick="sair()">Sair</button>
+        </div>
+        <h3>Status dos Alunos:</h3>
+        <div id="lista-alunos" class="student-grid">
+            </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
